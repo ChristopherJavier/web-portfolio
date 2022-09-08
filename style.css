@@ -6,4 +6,21 @@ body {
 
 nav {
     background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.nav_list {
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: black;
 }
