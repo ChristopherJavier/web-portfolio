@@ -1,14 +1,13 @@
 body {
     margin: 0;
     padding: 0;
-    background: black;
     font-family: 'Open Sans', sans-serif;
 }
 
 header {
     width: 100vw;
     height: 10vh;
-    background: white;
+    background: black;
     display: flex;
     justify-content: center;
 }
@@ -18,13 +17,14 @@ nav {
     margin: 0 1em;
     display: flex;
     align-items: center;
-    background: white;
+    justify-content: space-around;
+    background: black;
 }
 
 #logo {
     font-size: 16px;
     text-decoration: none;
-    color: black;
+    color: white;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -42,5 +42,83 @@ nav {
 
 .nav-links {
     text-decoration: none;
-    color: black;
+    color: white;
+}
+
+.prst_cont {
+    width: 100vw;
+    height: 50vh;
+}
+
+.prst_inner_cont {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+#prst_1 {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    text-align: left;
+}
+
+#prst_1 h2 {
+    margin: 0;
+}
+
+#prst_1 h3 {
+    margin: 0.5em 0;
+}
+
+#prst_2 {
+    grid-area: 1 / 2 / 2 / 3;
+    background: white;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#photo_cont {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(45deg, #f4f4f4, #646864, #000000);
+    border-radius: 49% 51% 48% 52% / 50% 49% 51% 50%;
+}
+
+.about {
+    width: 100vw;
+    height: 40vh;
+    background: black;
+}
+
+.skills {
+    width: 100vw;
+    height: 40vh;
+    background: white;
+}
+
+.projects {
+    width: 100vw;
+    height: 40vh;
+    background: black;
+}
+
+.contact {
+    width: 100vw;
+    height: 40vh;
+    background: white;
+}
+
+.section_title {
+    text-align: center;
+    font-size: 24px;
 }
