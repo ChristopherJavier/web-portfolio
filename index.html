@@ -22,9 +22,9 @@
                 <li class="nav-items">
                     <a href="#about" class="nav-links">About</a>
                 </li>
-                <li class="nav-items">
+                <!-- <li class="nav-items">
                     <a href="#skills" class="nav-links">Skills</a>
-                </li>
+                </li> -->
                 <li class="nav-items">
                     <a href="#projects" class="nav-links">Projects</a>
                 </li>
@@ -38,27 +38,42 @@
         <div class="prst_inner_cont">
             <div id="prst_1">
                 <h2>I'm Christopher Javier</h2>
-                <h3>Full Stack Developer</h3>
-            </div>
-            <div id="prst_2">
-                <div id="photo_cont">
-
-                </div>
+                <h3>Junior Full Stack Developer</h3>
+                <p>Focused to be a good coder, learn and grown in this industry</p>
             </div>
         </div>
     </main>
     <section class="about" id="about">
-        <h3 class="section_title">about</h3>
+        <h3 class="section_title">About</h3>
+        <p>
+            I'm a MERN Stack developer,
+            focused on create good software
+            and bring solutions and
+            projects that can help people
+            and make a difference.
+        </p>
     </section>
-    <section class="skills" id="skills">
+    <!-- <section class="skills" id="skills">
         <h3 class="section_title">skills</h3>
-    </section>
+    </section> -->
     <section class="projects" id="projects">
-        <h3 class="section_title">projects</h3>
+        <h3 class="section_title">Projects</h3>
+        <div class="projects_cont" id="projects_cont">        
+        </div>
     </section>
     <section class="contact" id="contact">
         <h3 class="section_title">Contact</h3>
+        <form action="mailto:cobesab184@iunicus.com" method="POST">
+            <input type="hidden" name="_subject" value="New Email">
+            <input type="email" name="email" placeholder="Email Address" required id="email">
+            <input type="text" name="message" placeholder="Write your message here" required id="message">
+            <button type="submit" class="css-button-sliding-to-left--black">Send</button>
+        </form>
     </section>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script type="text/javascript" src="index.js"></script>
 </body>
 
 </html>

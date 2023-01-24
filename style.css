@@ -22,7 +22,7 @@ nav {
 }
 
 #logo {
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: none;
     color: white;
     font-family: 'Ubuntu', sans-serif;
@@ -47,7 +47,7 @@ nav {
 
 .prst_cont {
     width: 100vw;
-    height: 50vh;
+    height: 60vh;
 }
 
 .prst_inner_cont {
@@ -61,7 +61,7 @@ nav {
 }
 
 #prst_1 {
-    grid-area: 1 / 1 / 2 / 2;
+    grid-area: 1 / 1 / 2 / 3;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,50 +75,293 @@ nav {
 }
 
 #prst_1 h3 {
-    margin: 0.5em 0;
+    margin: 0.2em 0;
 }
 
-#prst_2 {
+#prst_1 p {
+    margin: 0.5em 2.5em;
+}
+
+/* #prst_2 {
     grid-area: 1 / 2 / 2 / 3;
     background: white;
     display: flex;
     justify-items: center;
     justify-content: center;
     align-items: center;
-}
+} */
 
-#photo_cont {
+/* #photo_cont {
     width: 150px;
     height: 150px;
     background: linear-gradient(45deg, #f4f4f4, #646864, #000000);
     border-radius: 49% 51% 48% 52% / 50% 49% 51% 50%;
-}
+} */
 
 .about {
     width: 100vw;
-    height: 40vh;
-    background: black;
+    height: 50vh;
+    background: #000000;
+    outline: 0.5em solid black;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
 }
 
-.skills {
+
+
+.about p {
+    width: 60vw;
+    margin: 0 1em;
+    color: #FFFFFF;
+}
+
+.about h3 {
+    color: #FFFFFF;
+}
+
+/* .skills {
     width: 100vw;
     height: 40vh;
     background: white;
-}
+} */
 
 .projects {
     width: 100vw;
-    height: 40vh;
-    background: black;
+    padding-bottom: 2em;
+    background: white;
+}
+
+.projects_cont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.project-box {
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    height: 80vw;
+    text-align: center;
+    align-items: center;
+    box-shadow: #000000 5px 5px;
+    border: #000000 solid 0.15em;
+    margin-bottom: 1em;
+}
+
+.project-box h3 {
+    font-size: 16px;
+}
+
+.tech_list {
+    margin: 0;
+    padding: 0;
+}
+
+.tech_icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tech_icons_img {
+    width: 32px;
+    height: 32px;
+    align-items: center;
 }
 
 .contact {
     width: 100vw;
-    height: 40vh;
-    background: white;
+    height: 60vh;
+    background: #000000;
+    outline: 0.5em solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.contact h3 {
+    color: #FFFFFF;
 }
 
 .section_title {
     text-align: center;
     font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 40vh;
+    background: #FFFFFF;
+}
+
+#email {
+    margin: 1em 1em;
+    height: 5vh;
+}
+
+#message {
+    margin: 1em 1em 1em 1em;
+    height: 30vh;
+}
+
+.css-button-sliding-to-left--black {
+    margin: 1em 1em 1em 1em;
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #212529;
+    color: #212529;
+}
+
+.css-button-sliding-to-left--black:hover {
+    color: #fff;
+}
+
+.css-button-sliding-to-left--black:hover:after {
+    width: 100%;
+}
+
+.css-button-sliding-to-left--black:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #212529;
+}
+
+@media only screen and (min-width: 375px) {
+    .project-box {
+        height: 60vw;
+    }
+
+    .tech_icons_img {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+
+@media only screen and (min-width: 425px) {
+    #prst_1 h2 {
+        font-size: 28px;
+    }
+
+    #prst_1 h3 {
+        font-size: 22px;
+    }
+
+    #prst_1 p {
+        font-size: 20px;
+        width: 65vw;
+    }
+
+    .about p {
+        text-align: center;
+        width: 60vw;
+    }
+
+    .project-box {
+        height: 55vw;
+    }
+
+    .tech_icons_img {
+        width: 42px;
+        height: 42px;
+    }
+}
+
+@media only screen and (min-width: 768px) {    
+    #logo {
+        font-size: 36px;
+    }
+    
+    .nav-items {
+        font-size: 24px;
+    }
+    
+    #prst_1 h2 {
+        font-size: 48px;
+    }
+    
+    #prst_1 h3 {
+        font-size: 40px;
+    }
+    
+    #prst_1 p {
+        font-size: 36px;
+    }
+
+    .section_title {
+        font-size: 42px;
+    }    
+    
+    .about p {
+        width: 60vw;
+        font-size: 32px;
+    }
+    
+    .project-box {
+        width: 40vw;
+        height: 60vw;
+    }
+    
+    .project-box h3 {
+        font-size: 32px;
+    }
+
+    .project-box p {
+        font-size: 28px;
+        width: 80%;
+    }
+    
+    .tech_icons_img {
+        width: 72px;
+        height: 72px;
+        align-items: center;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        height: 40vh;
+        background: #FFFFFF;
+    }
+    
+    #email::-webkit-input-placeholder {
+        font-size: 20px;
+    }
+    
+    #message::-webkit-input-placeholder {
+        font-size: 28px;
+    }
 }
