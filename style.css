@@ -365,3 +365,40 @@ form {
         font-size: 28px;
     }
 }
+
+@media only screen and (min-width: 1024px) {
+    .prst_cont {
+        width: 100vw;
+        height: 80vh;
+    }
+
+    #prst_1 p {
+        width: 50vw;
+    }
+
+    .about {
+        height: 80vh;
+    }
+
+    .project-box {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .project-box h3 {
+        font-size: 42px;
+    }
+
+    .project-box p {
+        font-size: 40px;
+    }
+
+    .contact {
+        height: 80vh;
+    }
+
+    form {
+        height: 50vh;
+        width: 60vw;
+    }
+}
