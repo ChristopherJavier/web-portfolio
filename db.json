@@ -1,4 +1,15 @@
 {
+    "user": {
+        "linkedin": "https://www.linkedin.com/in/christopher-javier-9607a024a",
+        "github": "https://github.com/ChristopherJavier",
+        "profile_photo": "https://avatars.githubusercontent.com/u/82299283?v=4"
+    },
+    "techs": {
+        "Programming Languages": ["JS", "Python"],
+        "Front end": ["HTML5", "CSS3", "React"],
+        "Back end": ["Node.js", "Express.js", "GraphQL"],
+        "Databases": ["MongoDB", "MySQL", "MS SQL Server"]
+    },
     "projects": {
         "name": [
             "Weather-app",
@@ -31,13 +42,13 @@
                 "Tailwind CSS"
             ],
             [
-                "NodeJS",
+                "Node.js",
                 "Express",
                 "MongoDB"
             ],
             [
-                "HTML",
-                "CSS",
+                "HTML5",
+                "CSS3",
                 "Bootstrap"
             ]
         ],
