@@ -39,10 +39,18 @@ function showData(data) {
     let description = document.createElement("p");
     let ul = document.createElement("ul");
     let li = document.createElement("li");
+    let link = document.createElement("a");
+    let visit = document.createElement("span");
+
     name.innerHTML = `${project.name}`;
     description.innerHTML = `${project.descriptions}`;
+    link.href = project.github;
+    visit.innerHTML = " arrow_forward ";
+
     ul.className = "tech_list";
     div.className = "project-box";
+    link.className = "project-link";
+    visit.className = "material-symbols-outlined";
 
     project.technologies.map(function (i) {
       let img = document.createElement("img");
@@ -56,6 +64,8 @@ function showData(data) {
     div.appendChild(name);
     div.appendChild(description);
     div.appendChild(ul);
+    div.appendChild(link);
+    link.appendChild(visit);
     projectsCont.appendChild(div);
   });
 }
@@ -76,7 +86,7 @@ function getTechs(data) {
 
       techName.innerHTML = i;
       techImg.src = `./assets/${i}.png`;
-      techImg.id = `${k.replace(/\s/g, "")}T${data[k].indexOf(i)}`
+      techImg.id = `${k.replace(/\s/g, "")}T${data[k].indexOf(i)}`;
 
       techCard.append(techImg);
       techCard.append(techName);
