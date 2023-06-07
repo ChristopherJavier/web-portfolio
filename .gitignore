@@ -1,4 +1,7 @@
-./bd.json
+bd.json
 assets
+node_modules
+public
+.env.development.local
 ./assetsdebug.log
 debug.logdebug.log

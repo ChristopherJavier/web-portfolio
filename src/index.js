@@ -1,9 +1,10 @@
 let projectsCont = document.getElementById("projects_cont");
 let techsImgs = document.getElementById("techs_imgs");
 const techListElement = document.getElementById("techList");
+const contactForm = document.getElementById("contact-form");
 
 function getData() {
-  fetch("./db.json")
+  fetch("/db.json")
     .then((res) => res.json())
     .then((data) => {
       formatData(data.projects);
@@ -56,7 +57,7 @@ function showData(data) {
       let img = document.createElement("img");
       img.className = "tech_icons_img";
       li.className = "tech_icons";
-      img.src = `./assets/${i}.png`;
+      img.src = `./${i}.png`;
       li.appendChild(img);
       ul.append(li);
     });
@@ -85,7 +86,7 @@ function getTechs(data) {
       techCard.className = "techCard";
 
       techName.innerHTML = i;
-      techImg.src = `./assets/${i}.png`;
+      techImg.src = `./${i}.png`;
       techImg.id = `${k.replace(/\s/g, "")}T${data[k].indexOf(i)}`;
 
       techCard.append(techImg);
@@ -117,6 +118,17 @@ async function getLinks() {
     }
   }
 }
+
+function handleSubmit(event) {
+  event.preventDefault();
+  const data = new FormData(this);
+  const subject = encodeURIComponent(`You received a mail from ${data.get("name")} ${data.get("lastname")}`)
+  const body = encodeURIComponent(data.get("comments"))
+  console.log(body)
+  window.location.href = `mailto:${import.meta.env.VITE_MAIL}?subject=${subject}&body=${body}`
+}
+
+contactForm.addEventListener("submit", handleSubmit);
 
 getData();
 getLinks();
